@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Finance Tracker - Docker Deployment
 
 This repository contains the source code, Docker configuration, and artifacts for the Personal Finance Tracker application as part of the Docker assignment.
@@ -26,3 +27,8 @@ Once running, the application will be accessible at [http://localhost:8080](http
 - `nginx.conf`: Custom Nginx configuration for serving the React SPA.
 - Project Source Code: Complete source code for the Personal Finance Tracker.
 - `FintrackDockerScreenshots/`: Contains screenshots of the Docker image building, running locally, and pushing to DockerHub.
+=======
+# docker1
+
+DockerHub - hub.docker.com/r/akshay8969/finance-tracker
+>>>>>>> d5fdbb2c5aa08c80f48a9ea8ca0f514b6247fd5d
