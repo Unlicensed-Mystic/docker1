@@ -72,4 +72,4 @@ Visit: [http://localhost:8080](http://localhost:8080)
 | `Dockerfile` | Multi-stage build (Node 20 Alpine → Nginx Alpine) |
 | `nginx.conf` | Custom Nginx config for React SPA routing |
 | `src/` | React + Vite application source code |
-| `FintrackDockerScreenshots/` | Screenshots of build, run, and push steps |
+| `FintrackDockerScreenshots/` | Screenshots of Websie, image, docker and EC2 instance |
