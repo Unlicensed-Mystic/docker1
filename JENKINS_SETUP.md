@@ -70,6 +70,7 @@ http://localhost:8080
 
 <img width="1920" height="1013" alt="Screenshot 2026-04-16 215751" src="https://github.com/user-attachments/assets/3db82968-08ac-480f-81b4-f04c5a69455b" />
 
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/757fabf5-a9aa-4c91-84d8-bdcf92a6871a" />
 
 ## Useful Docker Commands for Jenkins
 
