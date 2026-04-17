@@ -59,7 +59,7 @@ pipeline {
         stage('Verify') {
             steps {
                 sh "docker ps --filter name=${CONTAINER_NAME}"
-                echo "✅ Application deployed at http://localhost:${APP_PORT}"
+                echo "Application deployed at http://localhost:${APP_PORT}"
             }
         }
     }
@@ -113,3 +113,9 @@ docker exec -u root jenkins chmod 666 /var/run/docker.sock
    - **Deploy Container:** Eliminates the old instance and runs `docker run` with the newly built image.
    - **Verify:** Checks the container instance.
 3. Once completed, the application goes live automatically at **[http://localhost:3000](http://localhost:3000)**.
+---
+
+<img width="1915" height="1013" alt="Screenshot 2026-04-17 215213" src="https://github.com/user-attachments/assets/466e77f1-f9d2-4f47-ad92-c54532eeba0b" />
+<img width="1919" height="1008" alt="Screenshot 2026-04-17 224530" src="https://github.com/user-attachments/assets/88f8e235-0047-4513-bc22-05e00aba03ea" />
+
+
