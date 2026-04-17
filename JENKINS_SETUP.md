@@ -4,7 +4,6 @@ Setting up Jenkins locally using Docker and verifying access through the browser
 
 ---
 
-## Prerequisites
 
 - Docker Desktop installed and running
 - Port `8080` available on localhost
@@ -43,12 +42,6 @@ docker run -d \
 docker ps
 ```
 
-Expected output:
-```
-CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS                                              NAMES
-1ead199d7175   jenkins/jenkins:lts-jdk21  ...                      1 minute ago    Up 1 minute    0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   jenkins
-```
-
 ---
 
 ## Step 3 — Get the Initial Admin Password
@@ -56,34 +49,28 @@ CONTAINER ID   IMAGE                      COMMAND                  CREATED      
 ```bash
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
-
-This will output a 32-character alphanumeric password, for example:
-```
-942462201b04486eafc3d7ad4e5df2af
-```
-
 ---
 
 ## Step 4 — Access Jenkins in the Browser
 
-Open your browser and navigate to:
-
 ```
 http://localhost:8080
 ```
-
-You will see the **"Unlock Jenkins"** page. Paste the password retrieved in Step 3 and click **Continue**.
-
 ---
 
 ## Step 5 — Initial Setup Wizard
 
-1. **Install Plugins** — Select **"Install suggested plugins"** and wait for installation to complete.
-2. **Create Admin User** — Fill in your desired username, password, full name, and email.
-3. **Instance Configuration** — Keep the default URL (`http://localhost:8080`) and click **Save and Finish**.
-4. Click **Start using Jenkins** — Jenkins dashboard will load. ✅
+1. **Install Plugins**
+2. **Create Admin User** 
+3. **Instance Configuration**
+4. **Start using Jenkins**
 
 ---
+<img width="1920" height="1019" alt="Screenshot 2026-04-16 220804" src="https://github.com/user-attachments/assets/5f3d15a4-bea6-40de-9009-269a55a9481d" />
+
+<img width="1920" height="1013" alt="Screenshot 2026-04-16 215751" src="https://github.com/user-attachments/assets/3db82968-08ac-480f-81b4-f04c5a69455b" />
+
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/757fabf5-a9aa-4c91-84d8-bdcf92a6871a" />
 
 ## Useful Docker Commands for Jenkins
 
